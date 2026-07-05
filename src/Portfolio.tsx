@@ -193,7 +193,16 @@ function Navbar({
                 <a
                   key={n.id}
                   href={`#${n.id}`}
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpen(false);
+                    setTimeout(() => {
+                      const element = document.getElementById(n.id);
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }, 100);
+                  }}
                   className="rounded-md px-3 py-2 text-sm text-muted-foreground transition hover:bg-surface hover:text-foreground"
                 >
                   {n.label}
