@@ -329,8 +329,8 @@ function Hero() {
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
           <a
-            href="/Rajesh_Lobhisetti_Resume.pdf"
-            download
+            href="/myportfolio/Rajesh_Lobhisetti_Resume.pdf"
+            download="Rajesh_Lobhisetti_Resume.pdf"
             className="inline-flex items-center gap-2 rounded-md border border-border bg-surface px-5 py-3 text-sm font-semibold transition hover:bg-surface-2"
           >
             <Download className="h-4 w-4" /> Download Resume
@@ -396,7 +396,7 @@ function About() {
           <div className="absolute -inset-2 rounded-3xl bg-gradient-to-br from-primary/50 to-transparent opacity-70 blur-xl transition group-hover:opacity-100" />
           <div className="relative h-64 w-64 overflow-hidden rounded-3xl border border-border bg-surface shadow-2xl ring-1 ring-primary/20 transition group-hover:ring-primary/50">
             <img
-              src="/rajesh-profile.jpg"
+              src="/myportfolio/rajesh-profile.jpg"
               alt="Rajesh Lobhisetti"
               className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
               loading="lazy"
@@ -873,6 +873,9 @@ function Contact() {
           I'm looking for full-stack developer internships and new-grad roles. The fastest way
           to reach me is email — happy to chat about projects, teams, or opportunities.
         </p>
+        <a href="/myportfolio/Rajesh_Lobhisetti_Resume.pdf" download="Rajesh_Lobhisetti_Resume.pdf" className="flex items-center gap-3 rounded-xl border border-border bg-surface p-4 transition hover:border-primary/40">
+          <Download className="h-5 w-5 text-primary" /> Download Resume
+        </a>
         <a
           href="mailto:rajeshlobhisetti@gmail.com"
           className="flex items-center gap-3 rounded-xl border border-border bg-surface p-4 transition hover:border-primary/40"
